@@ -1,0 +1,36 @@
+body {
+    background-color: #1a1a2e;
+    color: white;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #16213e;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 800px;
+}
+
+section {
+    background-color: #0f3460;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.resultado {
+    display: none;
+    text-align: center;
+    background-color: #00be19;
+}

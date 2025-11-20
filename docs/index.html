@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Espacial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz da Astronomia</h1>
+    </header>
+
+    <main class="container">
+        
+        <section id="quiz-container">
+            <form id="meuFormulario">
+                
+                <div class="mb-4">
+                    <h3>1. Qual é o planeta mais próximo do Sol?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pergunta1" value="venus">
+                        <label class="form-check-label">Vênus</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pergunta1" value="mercurio">
+                        <label class="form-check-label">Mercúrio</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pergunta1" value="marte">
+                        <label class="form-check-label">Marte</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h3>2. Quais são os Gigantes Gasosos? (Marque Todos os Corretos)</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="p2a" value="terra">
+                        <label class="form-check-label">Terra</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="p2b" value="jupiter">
+                        <label class="form-check-label">Júpiter</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="p2c" value="saturno">
+                        <label class="form-check-label">Saturno</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h3>3. Qual o nome da nossa galáxia?</h3>
+                    <input type="text" class="form-control" id="pergunta3" placeholder="Digite sua resposta">
+                </div>
+
+                <div class="mb-4">
+                    <h3>4. Quem pisou na lua primeiro?</h3>
+                    <select class="form-select" id="pergunta4">
+                        <option value="">Selecione...</option>
+                        <option value="buzz">Buzz Aldrin</option>
+                        <option value="neil">Neil Armstrong</option>
+                        <option value="yuri">Yuri Gagarin</option>
+                    </select>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="verificarRespostas()">ENVIAR RESPOSTAS</button>
+            </form>
+        </section>
+
+        <section id="area-resultado" class="resultado">
+            <h2>Resultado:</h2>
+            <div id="mensagem-final"></div>
+            <button class="btn btn-light mt-3" onclick="location.reload()">Tentar Novamente</button>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
